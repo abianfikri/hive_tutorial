@@ -74,7 +74,13 @@ class _FormPageState extends State<FormPage> {
                   height: 10,
                 ),
                 ElevatedButton(onPressed: (){
+                  Contact ct = Contact(
+                    name: name!,
+                    email: email!,
+                    phone: phone!
+                  );
 
+                  box.add(ct);
                 }, 
                 child: Text(
                   "Save"
