@@ -19,6 +19,7 @@ class _FormPageState extends State<FormPage> {
     // TODO: implement initState
     super.initState();
     box = Hive.box('databaseContact');
+    print("contactBox.length: ${box.values.length}");
   }
 
   String? name;
